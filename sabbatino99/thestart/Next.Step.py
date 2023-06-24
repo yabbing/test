@@ -194,3 +194,40 @@
 #except DogNotFoundException:
 #    print('dog not found!')
 
+## list comprehensions
+
+#numbers = [1 , 2, 3, 4, 5]
+
+#numbers_power_2 = [n**2 for n in numbers]
+#print (numbers_power_2)
+
+##Polymorphism
+
+#class Dog:
+#    def eat(self):
+#        print('Eating dog food')
+
+#class Cat:
+#    def eat(self):
+#        print('Eating cat food')
+
+#animal1 = Dog()
+#animal2 = Cat()
+
+#animal1.eat()
+#animal2.eat()
+
+## Operator Overloading
+
+class Dog:
+    #the Dog Class
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def __gt__(self, other):
+        return True if self.age > other.age else False
+    
+roger = Dog('Roger', 2)
+syd = Dog ('Syd', 6)
+
+print(roger > syd)

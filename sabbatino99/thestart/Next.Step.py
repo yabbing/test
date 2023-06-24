@@ -74,6 +74,123 @@
 
 ##Modules
 
-import math
+#import math
 
-print(math.sqrt(100))
+#print(math.sqrt(100))
+
+#lambda functions
+
+#lambda num : num * 2
+
+#multiply = lambda a, b : a * b
+#print(multiply(2, 4))
+
+# map, filter, rereduce
+#map()
+#numbers = [1, 2, 3]
+
+#result = map(lambda a : a * 2, numbers)
+
+#print(list(result))
+
+#filter()
+
+#numbers = [1, 2, 3, 4, 5, 6]
+
+#result = filter(lambda n : n % == 0, numbers)
+
+#print(list(result))
+
+#reduce()
+#from functools import reduce
+#expenses = [
+#    ('Dinner', 80),
+#    ('Car Repair', 120)
+#]
+
+#sum = reduce(lambda a, b: a[1] + b[1], expenses)
+
+#print(sum)
+
+#Recursion
+
+#def factorial(n):
+#    if n == 1: return 1
+#    return n * factorial(n-1)
+
+#print(factorial(3))
+#print(factorial(4))
+#print(factorial(5))
+
+#Decorators
+#def logtime(func):
+#    def wrapper():
+#        print('before')
+#        val = func()
+#        print('after')
+#        return val
+#    return wrapper
+
+#@logtime
+#def hello():
+#    print('hello')
+
+#hello()
+
+##Docstring
+
+#def increment(n):
+#    '''Increment a number'''
+#    return n + 1
+
+#class Dog:
+#    '''A class representing a dog'''
+#    def __init__ (self, name, age):
+#        self.name = name
+#        self.age = age
+
+#    def bark(self):
+#        '''Let the dog bark'''
+#        print('WOF!')
+
+#print(help(Dog))
+
+##Annontations
+
+#def increment(n int) -> int:
+#    return n + 1
+
+#count: int = 0
+
+##Exections
+
+#try:
+    #some lines of code
+#except <ERROR1>:
+    # handler <ERROR1>
+#except <ERROR2>:
+    #handler <ERROR2>
+
+#try:
+#    result = 2 / 0
+#except ZeroDivisionError:
+#    print ('Cannot divid by zero!')
+#finally:
+#    result = 1
+
+#print(result) # 1
+
+#try:
+#    raise Exception ('An Error!')
+#except Exception as error:
+#    print(error)
+
+#class DogNotFoundException(Exception):
+#    print('inside')
+#    pass
+
+#try:
+#    raise DogNotFoundException()
+#except DogNotFoundException:
+#    print('dog not found!')
+

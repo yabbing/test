@@ -229,5 +229,3 @@ class Dog:
     
 roger = Dog('Roger', 2)
 syd = Dog ('Syd', 6)
-
-print(roger > syd)
